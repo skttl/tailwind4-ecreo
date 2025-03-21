@@ -29,7 +29,7 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        run: ni pnpm install
+        run: nci
 
       - name: Build
         run: nr build --base /${{github.event.repository.name}}/
